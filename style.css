@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+    font-family: "Roboto", "sans-serif";
+    font-size: 48px;
+}
+#calculator-container table td {
+    float: center;
+    border: 5px solid gray;
+    font-size: 48px;
+}
+
