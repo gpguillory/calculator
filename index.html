@@ -3,40 +3,40 @@
     <head>
         <link rel='stylesheet' href='style.css'>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-        <h1>The Calculator</h1>
     </head>
     <body>
         <div id='calculator-container'>
-            <table id='display'>
-                <tr>blahblah</tr>
-            </table>
             <table id='calculator'>
                 <tr>
-                    <td>+</td>
-                    <td>-</td>
-                    <td>*</td>
-                    <td>/</td>
-                    <td>C</td>
+                    <td id='display' input type='text' colspan=4></td>
                 </tr>
                 <tr>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
+                    <td><input type="button" id="plus" class="all-buttons" value='+'> </td>
+                    <td><input type="button" id="minus" class="all-buttons" value='-'> </td>
+                    <td><input type="button" id="multiply" class="all-buttons" value='*'> </td>
+                    <td><input type="button" id="divide" class="all-buttons" value='/'> </td>
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
+                    <td><input type="button" id="seven" class="all-buttons" onclick="display.value += '7'" value='7'> </td>
+                    <td><input type="button" id="eight" class="all-buttons" value='8'> </td>
+                    <td><input type="button" id="nine" class="all-buttons" value='9'> </td>
+                    <td><input type="button" id="equals" class="all-buttons" rowspan=4 value='='> </td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
+                    <td><input type="button" id="four" class="all-buttons" value='4'> </td>
+                    <td><input type="button" id="five" class="all-buttons" value='5'> </td>
+                    <td><input type="button" id="six" class="all-buttons" value='6'> </td>
+                    
                 </tr>
                 <tr>
-                    <td>.</td>
-                    <td>0</td>
-                    <td>=</td>
+                    <td><input type="button" id="one" class="all-buttons" value='1'> </td>
+                    <td><input type="button" id="two" class="all-buttons" value='2'> </td>
+                    <td><input type="button" id="three" class="all-buttons" value='3'> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="period" class="all-buttons" value='.'> </td>
+                    <td><input type="button" id="zero" class="all-buttons" value='0'> </td>
+                    <td><input type="button" id="clear" class="all-buttons" value='C'> </td>
                 </tr>
             </table>
         </div>

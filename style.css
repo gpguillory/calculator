@@ -3,9 +3,31 @@ h1 {
     font-family: "Roboto", "sans-serif";
     font-size: 48px;
 }
+
+#calculator-container {
+    position: relative;
+    width: 400px;
+    margin: auto;
+    border: 5px solid gray;
+}
+
 #calculator-container table td {
     float: center;
+    text-align: center;
+    height: 100px;
+    width: 100px;
     border: 5px solid gray;
     font-size: 48px;
 }
 
+#calculator-container table td:hover {
+    background-color: gray;
+}
+
+#plus:hover {
+background-color: gray;
+}
+
+#display {
+    font-size: 48px;
+}

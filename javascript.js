@@ -1,3 +1,8 @@
+let firstnum = 0;
+let secondnum = 0;
+let values = 0;
+const display = document.querySelector('#display');
+
 function addFunc(a, b) {
     return a + b;
 }
@@ -29,4 +34,3 @@ function operate (a, b, operator) {
     }
 }
 
-document.getElementById("calculator").addEventListener("click")
