@@ -1,7 +1,7 @@
-let firstnum = 0;
-let secondnum = 0;
-let values = 0;
-const display = document.querySelector('#display');
+const display = document.getElementById('display');
+let x = 0;
+let y = 0;
+let operator = '';
 
 function addFunc(a, b) {
     return a + b;
@@ -34,3 +34,34 @@ function operate (a, b, operator) {
     }
 }
 
+function buttonPress(val) {
+    display.value += val;
+}
+
+function clear() {
+    display.value = '';
+    x = 0;
+    y = 0;
+    console.log("clear function invoked");
+}
+
+function clearButtonListener() {
+    let clearButton = document.querySelector('#clear');
+    clearButton.addEventListener('click', (e) => {
+        clear();
+    })
+}
+
+function operatorListener() {
+    let operatorClicked = document.querySelector('.operators');
+    operatorClicked.addEventListener('click', (e) => {
+        x = display.value;
+        operator = operatorClicked.value;
+        display.value= '';
+        console.log(x);
+        console.log(operatorClicked.value);
+    })
+}
+
+clearButtonListener();
+operatorListener();

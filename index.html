@@ -8,35 +8,35 @@
         <div id='calculator-container'>
             <table id='calculator'>
                 <tr>
-                    <td id='display' input type='text' colspan=4></td>
+                    <td colspan=4><input type='text' maxlength='10' id='display'/></td>
                 </tr>
                 <tr>
-                    <td><input type="button" id="plus" class="all-buttons" value='+'> </td>
-                    <td><input type="button" id="minus" class="all-buttons" value='-'> </td>
-                    <td><input type="button" id="multiply" class="all-buttons" value='*'> </td>
-                    <td><input type="button" id="divide" class="all-buttons" value='/'> </td>
+                    <td><input type="button" id="plus" class="all-buttons operators" value='+' onclick="buttonPress('+')"/> </td>
+                    <td><input type="button" id="minus" class="all-buttons operators" value='-' onclick="buttonPress('-')"/> </td>
+                    <td><input type="button" id="multiply" class="all-buttons operators" value='*' onclick="buttonPress('*')"/> </td>
+                    <td><input type="button" id="divide" class="all-buttons operators" value='/' onclick="buttonPress('/')"/> </td>
                 </tr>
                 <tr>
-                    <td><input type="button" id="seven" class="all-buttons" onclick="display.value += '7'" value='7'> </td>
-                    <td><input type="button" id="eight" class="all-buttons" value='8'> </td>
-                    <td><input type="button" id="nine" class="all-buttons" value='9'> </td>
-                    <td><input type="button" id="equals" class="all-buttons" rowspan=4 value='='> </td>
+                    <td><input type="button" id="seven" class="all-buttons" value="7" onclick="buttonPress('7')"/> </td>
+                    <td><input type="button" id="eight" class="all-buttons" value="8" onclick="buttonPress('8')"/> </td>
+                    <td><input type="button" id="nine" class="all-buttons" value="9" onclick="buttonPress('9')"/> </td>
+                    <td rowspan=4><input type="button" id="equals" class="all-buttons" value='=' onclick="buttonPress('=')"/> </td>
                 </tr>
                 <tr>
-                    <td><input type="button" id="four" class="all-buttons" value='4'> </td>
-                    <td><input type="button" id="five" class="all-buttons" value='5'> </td>
-                    <td><input type="button" id="six" class="all-buttons" value='6'> </td>
+                    <td><input type="button" id="four" class="all-buttons" value='4' onclick="buttonPress('4')"/> </td>
+                    <td><input type="button" id="five" class="all-buttons" value='5' onclick="buttonPress('5')"/> </td>
+                    <td><input type="button" id="six" class="all-buttons" value='6' onclick="buttonPress('6')"/> </td>
                     
                 </tr>
                 <tr>
-                    <td><input type="button" id="one" class="all-buttons" value='1'> </td>
-                    <td><input type="button" id="two" class="all-buttons" value='2'> </td>
-                    <td><input type="button" id="three" class="all-buttons" value='3'> </td>
+                    <td><input type="button" id="one" class="all-buttons" value='1' onclick="buttonPress('1')"/> </td>
+                    <td><input type="button" id="two" class="all-buttons" value='2' onclick="buttonPress('2')"/> </td>
+                    <td><input type="button" id="three" class="all-buttons" value='3' onclick="buttonPress('3')"/> </td>
                 </tr>
                 <tr>
-                    <td><input type="button" id="period" class="all-buttons" value='.'> </td>
-                    <td><input type="button" id="zero" class="all-buttons" value='0'> </td>
-                    <td><input type="button" id="clear" class="all-buttons" value='C'> </td>
+                    <td><input type="button" id="period" class="all-buttons" value='.' onclick="buttonPress('.')"/> </td>
+                    <td><input type="button" id="zero" class="all-buttons" value='0' onclick="buttonPress('0')"/> </td>
+                    <td><input type="button" id="clear" class="all-buttons" value='C'/></td>
                 </tr>
             </table>
         </div>
